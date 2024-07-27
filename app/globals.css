@@ -17,17 +17,24 @@
 }
 
 body {
+  font-family: 'Arctik', sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@font-face {
+  font-family: 'Arctik';
+  src: url('/fonts/Arctik/Arctik-1.5') format('tff'),
+    url('/fonts/Arctik/Arctik-1') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

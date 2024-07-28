@@ -19,9 +19,9 @@ const config: Config = {
       colors: {
         primary: "#7368b7", // Add the custom primary color
         secondary: "#ae9df3",
-        urgent: "#ff6961",
-        medium: "#fcd34d",
-        low: "#34d399",
+        urgent: "#ff6b6b",
+        medium: "#ffa235",
+        low: "#0ecc5a",
         background: "#f5f5f5",
         violetGaze: {
           100: "#e8e5ff", // Very light

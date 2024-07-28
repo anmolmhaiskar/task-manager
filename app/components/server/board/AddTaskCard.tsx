@@ -1,8 +1,11 @@
-// components/Board/AddTaskCard.js
+import { GoPlus } from "react-icons/go";
 const AddTaskCard = () => {
   return (
-    <button className="w-full p-4 text-left bg-gray-100 border border-dashed rounded text-gray-500 hover:bg-gray-200">
-      Add new
+    <button className="w-full p-2 text-left bg-black border rounded-lg text-sm text-white hover:bg-gray-700">
+      <div className="flex justify-between items-center">
+        <span>Add new</span>
+        <GoPlus size={25} />
+      </div>
     </button>
   );
 };

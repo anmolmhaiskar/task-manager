@@ -4,4 +4,5 @@ export interface Task {
   status: "To do" | "In progress" | "Under review" | "Finished";
   priority: "Urgent" | "Medium" | "Low";
   deadline: string;
+  createdAt: string;
 }

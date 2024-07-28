@@ -1,6 +1,4 @@
 // pages/index.tsx
-import Navbar from "../components//server/layout/Navbar";
-import Sidebar from "../components/server/layout/Sidebar";
 import TaskBoard from "../components/server/TaskBoard";
 import { Task } from "../components/types";
 
@@ -12,6 +10,7 @@ const tasks: Task[] = [
     status: "To do",
     priority: "Urgent",
     deadline: "2024-08-15",
+    createdAt: "1 hr ago",
   },
   {
     title: "Design Home Page UI",
@@ -20,6 +19,7 @@ const tasks: Task[] = [
     status: "In progress",
     priority: "Medium",
     deadline: "2024-08-15",
+    createdAt: "1 hr ago",
   },
   {
     title: "Integrate Cloud Storage",
@@ -27,6 +27,7 @@ const tasks: Task[] = [
     status: "Under review",
     priority: "Urgent",
     deadline: "2024-08-20",
+    createdAt: "2 days ago",
   },
   {
     title: "Test Cross-browser Compatibility",
@@ -35,6 +36,7 @@ const tasks: Task[] = [
     status: "Finished",
     priority: "Medium",
     deadline: "2024-07-30",
+    createdAt: "4 days ago",
   },
   {
     title: "Conduct User Feedback Survey",
@@ -42,19 +44,14 @@ const tasks: Task[] = [
     status: "In progress",
     priority: "Low",
     deadline: "2024-08-05",
+    createdAt: "3 hr ago",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="flex h-screen bg-background">
-      <Sidebar />
-      <div className="flex flex-col flex-1">
-        <Navbar />
-        <div className="p-6">
-          <TaskBoard tasks={tasks} />
-        </div>
-      </div>
+    <div className="py-6">
+      <TaskBoard tasks={tasks} />
     </div>
   );
 }
